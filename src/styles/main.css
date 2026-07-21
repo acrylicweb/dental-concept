@@ -108,7 +108,7 @@
 .treatmentcard-container .treatmentcard .text {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 4px;
   padding: 0px 12px 0px 12px;
   align-items: flex-start;
   height: 100%;
