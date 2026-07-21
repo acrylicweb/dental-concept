@@ -1,0 +1,57 @@
+@use "../abstracts/variables" as *;
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  border: 1px solid red;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 12px 16px;
+  border-radius: 16px;
+  text-decoration: none;
+  text-wrap: nowrap;
+  // display: inline-block;
+  box-shadow: $shadow-lg;
+
+  &__icon {
+    height: 18px;
+    width: 18px;
+  }
+  &--primary {
+    background-color: $brand-gold;
+    border: 1px solid $brand-gold;
+    color: $white;
+    &:hover {
+      background-color: $button-text-hover;
+      border: 1px solid $button-text-hover;
+      transform: translateY(1px);
+    }
+  }
+
+  &--secondary {
+    background-color: transparent;
+    border: 2px solid $brand-gold;
+    color: $brand-gold;
+    &:hover {
+      border: 2px solid $button-text-hover;
+      color: $button-text-hover;
+      transform: translateY(1px);
+    }
+  }
+
+  &--text {
+    box-shadow: none;
+    padding-inline: 0;
+    background-color: transparent;
+    border: 0;
+    color: $brand-gold;
+    &:hover {
+      color: $button-text-hover;
+      transform: translateY(1px);
+    }
+  }
+
+  //font-family: $bodyfont;
+}

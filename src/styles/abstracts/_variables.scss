@@ -1,0 +1,110 @@
+// ==========================================================
+// COLOUR VARIABLES
+// Elevate Dental Care Design System
+// ==========================================================
+
+// ==========================================================
+// Brand Colours
+// ==========================================================
+
+$brand-navy: #0f2b46;
+$brand-gold: #c69b4a;
+
+// ==========================================================
+// Neutrals
+// ==========================================================
+
+$white: #ffffff;
+$off-white: #f9f8f6;
+$light-grey: #f3f4f6;
+$grey: #d9d9d9;
+$dark-grey: #6b7280;
+$charcoal: #2d3748;
+$black: #111827;
+
+// ==========================================================
+// Text Colours
+// ==========================================================
+
+$text-primary: $brand-navy;
+$text-secondary: $dark-grey;
+$text-light: $white;
+$text-muted: #8a8f98;
+
+// ==========================================================
+// Background Colours
+// ==========================================================
+
+$background-primary: $white;
+$background-secondary: $off-white;
+$background-accent: #faf6ef;
+$background-dark: $brand-navy;
+
+// ==========================================================
+// Border Colours
+// ==========================================================
+
+$border-light: #e5e7eb;
+$border-medium: #d1d5db;
+$border-dark: $brand-gold;
+
+// ==========================================================
+// Button Colours
+// ==========================================================
+
+$button-primary-background: $brand-gold;
+$button-primary-text: $white;
+$button-primary-hover: #b98e43;
+
+$button-secondary-background: transparent;
+$button-secondary-text: $brand-gold;
+$button-secondary-border: $brand-gold;
+$button-secondary-hover: rgba(201, 163, 92, 0.08);
+
+$button-text-colour: $brand-gold;
+$button-text-hover: #b98e43;
+
+// ==========================================================
+// Link Colours
+// ==========================================================
+
+$link: $brand-gold;
+$link-hover: #b98e43;
+
+// ==========================================================
+// Status Colours
+// ==========================================================
+
+$success: #22c55e;
+$warning: #f59e0b;
+$error: #dc2626;
+$info: #3b82f6;
+
+// ==========================================================
+// Overlays
+// ==========================================================
+
+$overlay-dark: rgba(15, 43, 70, 0.7);
+$overlay-light: rgba(255, 255, 255, 0.8);
+
+// ==========================================================
+// Shadows
+// ==========================================================
+
+$shadow-sm: rgba(0, 0, 0, 0.05);
+$shadow-md: rgba(0, 0, 0, 0.08);
+$shadow-lg: 4px 4px 4px rgba(0, 0, 0, 0.12);
+
+// ==========================================================
+// Gradients
+// ==========================================================
+
+$gradient-gold: linear-gradient(135deg, #d6b16b 0%, #c9a35c 100%);
+
+$gradient-navy: linear-gradient(180deg, #0f2b46 0%, #173b5f 100%);
+
+$gradient-light: linear-gradient(180deg, #ffffff 0%, #f9f8f6 100%);
+
+// fonts
+$font-heading: "Playfair Display", serif;
+$font-body: "Inter", sans-serif;

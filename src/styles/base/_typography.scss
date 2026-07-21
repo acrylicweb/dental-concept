@@ -1,0 +1,103 @@
+@use "../abstracts/variables" as *;
+
+body {
+  font-family: $font-body;
+  color: $text-primary;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  font-family: $font-heading;
+  color: $text-primary;
+}
+
+p,
+a,
+button,
+input,
+textarea,
+label,
+li {
+  font-family: $font-body;
+}
+
+h2 {
+  line-height: 1.15;
+}
+
+h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 72px;
+  line-height: 1.1;
+  font-weight: 600;
+
+  @media (max-width: 1440px) {
+    font-size: 64px;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 56px;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 48px;
+  }
+
+  @media (max-width: 560px) {
+    font-size: 40px;
+  }
+}
+
+h2 {
+  font-size: 52px;
+  line-height: 1.15;
+  font-weight: 600;
+
+  @media (max-width: 1440px) {
+    font-size: 48px;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 42px;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 38px;
+  }
+
+  @media (max-width: 560px) {
+    font-size: 32px;
+  }
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+
+  @media (max-width: 1440px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 560px) {
+    font-size: 16px;
+  }
+}
+.eyebrow {
+  text-transform: uppercase;
+  color: $brand-gold;
+  font-weight: 500;
+}

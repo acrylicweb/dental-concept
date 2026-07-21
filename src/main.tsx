@@ -1,7 +1,9 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./styles/main.scss";
+import { BrowserRouter } from "react-router";
 import App from "./App";
+import "./styles/main.scss";
+import Navbar from "./components/Navbar";
 
 const rootElement = document.getElementById("root");
 
@@ -11,6 +13,9 @@ if (!rootElement) {
 
 createRoot(rootElement).render(
   <StrictMode>
-    <App />
+    <BrowserRouter>
+      <Navbar></Navbar>
+      <App />
+    </BrowserRouter>
   </StrictMode>,
 );
