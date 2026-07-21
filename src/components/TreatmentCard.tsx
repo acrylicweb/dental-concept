@@ -20,7 +20,7 @@ const TreatmentCard = () => {
         }
       },
       {
-        threshold: 0.2,
+        threshold: 0.3,
       },
     );
 
@@ -39,18 +39,19 @@ const TreatmentCard = () => {
       {treatmentdata.map((treatment) => (
         <article className="treatmentcard" key={treatment.name}>
           <img src={treatment.img} alt={treatment.name} />
+          <div className="text">
+            <h3>{treatment.name}</h3>
 
-          <h3>{treatment.name}</h3>
+            <p>{treatment.intro}</p>
 
-          <p>{treatment.intro}</p>
-
-          <Button
-            href="/invisalign"
-            variant="text"
-            icon={<Icon icon="mingcute:arrow-right-fill" />}
-          >
-            Learn More
-          </Button>
+            <Button
+              href="/invisalign"
+              variant="text"
+              icon={<Icon icon="mingcute:arrow-right-fill" />}
+            >
+              Learn More
+            </Button>
+          </div>
         </article>
       ))}
     </div>

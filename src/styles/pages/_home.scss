@@ -12,6 +12,20 @@
       display: flex;
       flex-direction: column;
       gap: 16px;
+      @media only screen and (max-width: 800px) {
+        p {
+          br {
+            display: none;
+          }
+        }
+      }
+      @media only screen and (max-width: 400px) {
+        h2 {
+          br {
+            display: none;
+          }
+        }
+      }
     }
   }
 }
