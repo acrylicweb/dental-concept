@@ -1,6 +1,5 @@
 import Button from "../components/Button";
 import TreatmentCard from "../components/TreatmentCard";
-import { treatmentdata } from "../data/treatments";
 const Home = () => {
   return (
     <main className="home-page-container">
@@ -27,9 +26,7 @@ const Home = () => {
         </div>
         <TreatmentCard />
 
-        <Button className="button" href="/treatments">
-          View all Treatments
-        </Button>
+        <Button href="/treatments">View all Treatments</Button>
       </section>
     </main>
   );
