@@ -105,7 +105,7 @@
      object-fit: cover;
   border-radius: 16px;
 }
-.treatmentcard-container .treatmentcard .text {
+.treatmentcard-container .treatmentcard .card-text {
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -113,12 +113,12 @@
   align-items: flex-start;
   height: 100%;
 }
-.treatmentcard-container .treatmentcard .text > a {
+.treatmentcard-container .treatmentcard .card-text > a {
   align-self: flex-start;
   margin-top: auto;
 }
-.treatmentcard-container .treatmentcard .text h3,
-.treatmentcard-container .treatmentcard .text p {
+.treatmentcard-container .treatmentcard .card-text h3,
+.treatmentcard-container .treatmentcard .card-text p {
   text-align: left;
 }
 @media only screen and (max-width: 1280px) {

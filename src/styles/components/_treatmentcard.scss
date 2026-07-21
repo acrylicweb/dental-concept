@@ -35,13 +35,13 @@
       object-fit: cover;
       border-radius: 16px;
     }
-    .text {
+    .card-text {
       display: flex;
       flex-direction: column;
       gap: 4px;
       padding: 0px 12px 0px 12px;
       align-items: flex-start;
-      //border: 1px solid red;
+      // border: 1px solid red;
       height: 100%;
       & > a {
         align-self: flex-start;
@@ -51,6 +51,7 @@
       h3,
       p {
         text-align: left;
+        //    border: 1px solid blue;
       }
     }
     @media only screen and (max-width: 1280px) {

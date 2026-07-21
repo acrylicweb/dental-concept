@@ -39,7 +39,7 @@ const TreatmentCard = () => {
       {treatmentdata.map((treatment) => (
         <article className="treatmentcard" key={treatment.name}>
           <img src={treatment.img} alt={treatment.name} />
-          <div className="text">
+          <div className="card-text">
             <h3>{treatment.name}</h3>
 
             <p>{treatment.intro}</p>
