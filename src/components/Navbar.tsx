@@ -2,7 +2,7 @@ import { NavLink } from "react-router";
 
 function Navbar() {
   return (
-    <header>
+    <header className="header-container">
       <nav>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/treatments">Treatments</NavLink>

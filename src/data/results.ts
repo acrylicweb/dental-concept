@@ -1,0 +1,51 @@
+export const resultsData = [
+  {
+    id: 1,
+    beforeimg: "/",
+    beforealt: "Patient smile before professional teeth whitening",
+    afterimg: "/",
+    afteralt: "Patient smile after professional teeth whitening",
+    service: "Teeth whitening",
+  },
+  {
+    id: 2,
+    beforeimg: "/",
+    beforealt: "Patient smile before dental implant treatment",
+    afterimg: "/",
+    afteralt: "Patient smile after dental implant treatment",
+    service: "Dental implants",
+  },
+  {
+    id: 3,
+    beforeimg: "/",
+    beforealt: "Patient smile before veneers",
+    afterimg: "/",
+    afteralt: "Patient smile after veneers",
+    service: "Veneers",
+  },
+  {
+    id: 4,
+    beforeimg: "/",
+    beforealt: "Patient smile before Invisalign treatment",
+    afterimg: "/",
+    afteralt: "Patient smile after Invisalign treatment",
+    service: "Invisalign",
+  },
+
+  {
+    id: 5,
+    beforeimg: "/",
+    beforealt: "Patient smile before composite bonding",
+    afterimg: "/",
+    afteralt: "Patient smile after composite bonding",
+    service: "Composite bonding",
+  },
+  {
+    id: 6,
+    beforeimg: "/",
+    beforealt: "Patient smile before a smile makeover",
+    afterimg: "/",
+    afteralt: "Patient smile after a smile makeover",
+    service: "Smile makeover",
+  },
+];

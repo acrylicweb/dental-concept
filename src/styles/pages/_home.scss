@@ -1,6 +1,62 @@
 @use "../abstracts/variables" as *;
 
 .home-page-container {
+  .hero {
+    width: 100%;
+    height: 100vh;
+    border: 1px solid blue;
+    background-image: url("https://d12t91h5erunhq.cloudfront.net/home/dental-home-hero.webp");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media only screen and (max-width: 1024px) {
+      background-position-y: 0;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      width: 55%;
+      justify-content: center;
+      gap: 48px;
+      .text {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 16px;
+      }
+      .trusts {
+        display: flex;
+        gap: 16px;
+        //     align-items: center;
+        hr {
+          border: 2px solid #d9d9d9;
+          border-radius: 2px;
+          height: 48px;
+          align-self: center;
+        }
+        .trust {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+
+          .icon {
+            height: 40px;
+            width: 40px;
+            color: $brand-gold;
+          }
+          .stars-container {
+            padding-top: 20px;
+            .star {
+              width: 20px;
+              height: 20px;
+              color: $brand-gold;
+            }
+          }
+        }
+      }
+    }
+  }
   .sect2 {
     display: flex;
     flex-direction: column;
@@ -24,6 +80,201 @@
           br {
             display: none;
           }
+        }
+      }
+    }
+  }
+  .sect3 {
+    display: flex;
+    gap: 40px;
+    background-color: $off-white;
+    @media only screen and (max-width: 1300px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+    .text {
+      width: calc(50% - 20px);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+      @media only screen and (max-width: 1520px) {
+        gap: unset;
+        justify-content: space-between;
+      }
+      @media only screen and (max-width: 1300px) {
+        width: 80%;
+        text-align: center;
+        align-items: center;
+        gap: 8px;
+        a {
+          display: none;
+        }
+      }
+      @media only screen and (max-width: 1024px) {
+        width: 100%;
+      }
+    }
+    a.result-tablet {
+      display: none;
+      @media only screen and (max-width: 1300px) {
+        display: flex;
+      }
+    }
+  }
+  .sect4 {
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    text-align: center;
+    .usp-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 32px;
+      @media only screen and (max-width: 1024px) {
+        gap: 24px;
+      }
+      .usp-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        width: 280px;
+        border: 1px solid red;
+        img {
+          width: 100px;
+          height: 100px;
+          border: 1px solid blue;
+        }
+        h3 br {
+          display: none;
+        }
+        @media only screen and (max-width: 1440px) {
+          width: calc(25% - 24px);
+        }
+        @media only screen and (max-width: 1180px) {
+          h3 br {
+            display: unset;
+          }
+        }
+        @media only screen and (max-width: 1024px) {
+          width: 310px;
+          h3 br {
+            display: none;
+          }
+        }
+        @media only screen and (max-width: 800px) {
+          width: calc(50% - 12px);
+        }
+        @media only screen and (max-width: 420px) {
+          h3 br {
+            display: unset;
+          }
+        }
+        @media only screen and (max-width: 400px) {
+          width: 240px;
+        }
+      }
+    }
+  }
+  .sect5 {
+    display: flex;
+    gap: 56px;
+    background-color: $off-white;
+    @media only screen and (max-width: 1180px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+      gap: 24px;
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: calc(50% - 28px);
+      align-items: flex-start;
+      @media only screen and (max-width: 1180px) {
+        width: 75%;
+        align-items: center;
+        a {
+          display: none;
+        }
+      }
+      @media only screen and (max-width: 800px) {
+        width: 100%;
+      }
+      @media only screen and (max-width: 560px) {
+        p br {
+          display: none;
+        }
+      }
+      @media only screen and (max-width: 330px) {
+        h2 br {
+          display: none;
+        }
+      }
+    }
+    img {
+      width: calc(50% - 28px);
+      aspect-ratio: 16/9;
+      border: 1px solid red;
+      border-radius: 8px;
+      @media only screen and (max-width: 1180px) {
+        width: 75%;
+      }
+      @media only screen and (max-width: 800px) {
+        width: 100%;
+      }
+    }
+    a.team-tablet {
+      display: none;
+      @media only screen and (max-width: 1180px) {
+        display: flex;
+      }
+    }
+  }
+  .sect6 {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    @media only screen and (max-width: 1024px) {
+      gap: 32px;
+    }
+    @media only screen and (max-width: 560px) {
+      gap: 24px;
+    }
+    .eyebrow,
+    h2 {
+      text-align: center;
+    }
+  }
+  .sect7 {
+    justify-content: space-around;
+    align-items: center;
+    background-color: $brand-navy;
+    @media only screen and (max-width: 1024px) {
+      justify-content: space-between;
+    }
+    @media only screen and (max-width: 800px) {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      gap: 24px;
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    h2,
+    p {
+      color: #fff;
+      @media only screen and (max-width: 450px) {
+        br {
+          display: none;
         }
       }
     }

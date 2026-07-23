@@ -1,0 +1,145 @@
+@use "../abstracts/variables" as *;
+
+.reviews-carousel {
+  position: relative;
+  width: 100%;
+
+  &__viewport {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__track {
+    display: flex;
+    width: 100%;
+    will-change: transform;
+  }
+
+  &__slide {
+    display: flex;
+    padding: 0px 56px;
+    flex: 0 0 100%;
+    width: calc(100% - 112px);
+    gap: 24px;
+    padding-bottom: 6px;
+    // border: 1px solid green;
+  }
+
+  &__arrow {
+    top: calc(50% - 48px);
+    color: $brand-gold;
+    background-color: $off-white;
+    // border: 1px solid $brand-gold;
+    border: none;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    z-index: 20;
+    box-shadow: $shadow-lg;
+    padding: 12px;
+    &:hover {
+      cursor: pointer;
+      //  border: 1px solid $button-text-hover;
+      color: $button-text-hover;
+      transform: scale(1.1);
+    }
+    &:active {
+      transform: translateY(2px);
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+      //   border: 1px solid orange;
+    }
+
+    &:disabled {
+      cursor: default;
+      opacity: 0.6;
+    }
+
+    &--previous {
+      left: 0px;
+    }
+
+    &--next {
+      right: 0px;
+    }
+  }
+
+  &__dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  &__dot {
+    width: 12px;
+    height: 12px;
+    padding: 0;
+
+    background-color: #fff;
+    border: 2px solid $brand-gold;
+    border-radius: 50%;
+
+    cursor: pointer;
+    transition:
+      background-color 0.3s ease,
+      transform 0.3s ease;
+
+    &--active {
+      background-color: $brand-gold;
+      transform: scale(1.15);
+    }
+  }
+  .review-card {
+    //   border: 1px solid red;
+    border-radius: 16px;
+    box-shadow: $shadow-lg;
+    background-color: $off-white;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    @media only screen and (max-width: 1040px) {
+      padding: 14px;
+    }
+    @media only screen and (max-width: 1024px) {
+      padding: 16px;
+    }
+    .icon {
+      width: 24px;
+      height: 24px;
+      color: $brand-gold;
+      margin-bottom: -8px;
+    }
+    .author {
+      //border: 1px solid red;
+      display: flex;
+      gap: 8px;
+      margin-top: auto;
+      img {
+        border: 1px solid green;
+        height: 36px;
+        width: 36px;
+        border-radius: 50%;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        line-height: 18px;
+        .review-card-name {
+          font-weight: 500;
+          font-size: 16px;
+        }
+        .review-card-treatment {
+          // font-weight: 500;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

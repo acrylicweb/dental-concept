@@ -2,6 +2,9 @@
 @use "./abstracts/breakpoints";
 @use "./components/button";
 @use "./components/treatmentcard";
+@use "./components/resultcarousel";
+@use "./components/reviews";
+@use "./components/navbar";
 @use "./base/typography";
 @use "./base/global";
 @use "./pages/home";

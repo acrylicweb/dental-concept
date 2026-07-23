@@ -32,12 +32,12 @@ h3 {
 }
 
 h1 {
-  font-size: 72px;
+  font-size: 64px;
   line-height: 1.1;
   font-weight: 600;
 
   @media (max-width: 1440px) {
-    font-size: 64px;
+    font-size: 56px;
   }
 
   @media (max-width: 1024px) {
@@ -54,24 +54,25 @@ h1 {
 }
 
 h2 {
-  font-size: 52px;
+  font-size: 48px;
   line-height: 1.15;
   font-weight: 600;
+  letter-spacing: -1%;
 
   @media (max-width: 1440px) {
-    font-size: 48px;
+    font-size: 44px;
   }
 
   @media (max-width: 1024px) {
-    font-size: 42px;
-  }
-
-  @media (max-width: 800px) {
     font-size: 38px;
   }
 
+  @media (max-width: 800px) {
+    font-size: 34px;
+  }
+
   @media (max-width: 560px) {
-    font-size: 32px;
+    font-size: 28px;
   }
 }
 
@@ -99,5 +100,5 @@ h3 {
 .eyebrow {
   text-transform: uppercase;
   color: $brand-gold;
-  font-weight: 500;
+  font-weight: 600;
 }

@@ -7,6 +7,7 @@ type ButtonProps = {
   variant?: "primary" | "secondary" | "text";
   icon?: ReactNode;
   external?: boolean;
+  className?: string;
 };
 
 const Button = ({
@@ -14,9 +15,10 @@ const Button = ({
   href,
   variant = "primary",
   icon,
+  className = "",
   external = false,
 }: ButtonProps) => {
-  const className = `button button--${variant}`;
+  const buttonClassName = `button button--${variant} ${className}`.trim();
 
   const content = (
     <>
@@ -30,7 +32,7 @@ const Button = ({
     return (
       <a
         href={href}
-        className={className}
+        className={buttonClassName}
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -40,7 +42,7 @@ const Button = ({
   }
 
   return (
-    <Link to={href} className={className}>
+    <Link to={href} className={buttonClassName}>
       {content}
     </Link>
   );
