@@ -13,6 +13,10 @@ const Home = () => {
             <h1>
               The smile you’ve always wanted, delivered by experts you can trust
             </h1>
+            <img
+              src="https://d12t91h5erunhq.cloudfront.net/home/dental-home-mobile-hero.webp"
+              alt="hero image of a woman smiling"
+            />
             <p>
               Transform your smile with advanced cosmetic dentistry tailored to
               you.
@@ -23,41 +27,47 @@ const Home = () => {
               Book your smile consultation
             </Button>
           </div>
-          <div className="trusts">
-            <article className="trust">
-              <div className="stars-container">
-                <Icon icon="material-symbols:star" className="star" />
-                <Icon icon="material-symbols:star" className="star" />
-                <Icon icon="material-symbols:star" className="star" />
-                <Icon icon="material-symbols:star" className="star" />
-                <Icon icon="material-symbols:star" className="star" />
-              </div>
-              <span>4.9 Google rating</span>
-            </article>{" "}
-            <hr />
-            <article className="trust">
-              <Icon icon="material-symbols:trophy" className="icon" />
-              <span>
-                Award-winning <br />
-                dental team
-              </span>
-            </article>{" "}
-            <hr />
-            <article className="trust">
-              <Icon icon="mdi:location" className="icon" />
-              <span>
-                trusted by thousands <br />
-                of local patients
-              </span>
-            </article>{" "}
-            <hr />
-            <article className="trust">
-              <Icon icon="ph:credit-card" className="icon" />
-              <span>
-                0% finance options <br />
-                available
-              </span>
-            </article>
+          <div className="trust-btn-holder">
+            {" "}
+            <Button href="/" icon={<Icon icon="mingcute:arrow-right-fill" />}>
+              Book your smile consultation
+            </Button>
+            <div className="trusts">
+              <article className="trust">
+                <div className="stars-container">
+                  <Icon icon="material-symbols:star" className="star" />
+                  <Icon icon="material-symbols:star" className="star" />
+                  <Icon icon="material-symbols:star" className="star" />
+                  <Icon icon="material-symbols:star" className="star" />
+                  <Icon icon="material-symbols:star" className="star" />
+                </div>
+                <span>4.9 Google rating</span>
+              </article>{" "}
+              <hr />
+              <article className="trust">
+                <Icon icon="material-symbols:trophy" className="icon" />
+                <span>
+                  Award-winning <br />
+                  dental team
+                </span>
+              </article>{" "}
+              <hr />
+              <article className="trust">
+                <Icon icon="mdi:location" className="icon" />
+                <span>
+                  Trusted by thousands <br />
+                  of local patients
+                </span>
+              </article>{" "}
+              <hr />
+              <article className="trust">
+                <Icon icon="ph:credit-card" className="icon" />
+                <span>
+                  0% finance options <br />
+                  available
+                </span>
+              </article>
+            </div>
           </div>
         </div>
       </section>
@@ -114,7 +124,10 @@ const Home = () => {
         >
           Meet the Team
         </Button>{" "}
-        <img src="/" alt="picture of the team" />
+        <img
+          src="https://d12t91h5erunhq.cloudfront.net/home/team.webp"
+          alt="picture of the team"
+        />
         <div className="text">
           <p className="eyebrow">meet our team</p>
           <h2>

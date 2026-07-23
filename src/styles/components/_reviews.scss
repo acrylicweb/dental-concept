@@ -22,14 +22,12 @@
     width: calc(100% - 112px);
     gap: 24px;
     padding-bottom: 6px;
-    // border: 1px solid green;
   }
 
   &__arrow {
     top: calc(50% - 48px);
     color: $brand-gold;
     background-color: $off-white;
-    // border: 1px solid $brand-gold;
     border: none;
     border-radius: 50%;
     align-items: center;
@@ -41,7 +39,6 @@
     padding: 12px;
     &:hover {
       cursor: pointer;
-      //  border: 1px solid $button-text-hover;
       color: $button-text-hover;
       transform: scale(1.1);
     }
@@ -52,7 +49,6 @@
     svg {
       width: 24px;
       height: 24px;
-      //   border: 1px solid orange;
     }
 
     &:disabled {
@@ -122,7 +118,6 @@
       gap: 8px;
       margin-top: auto;
       img {
-        border: 1px solid green;
         height: 36px;
         width: 36px;
         border-radius: 50%;

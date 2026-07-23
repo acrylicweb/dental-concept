@@ -6,7 +6,7 @@ export const reviewsData = [
       "The entire team made me feel comfortable from my first consultation. I am so happy with my new smile.",
     rating: 5,
     treatment: "Invisalign patient",
-    image: "/images/reviews/sophie.webp",
+    image: "https://d12t91h5erunhq.cloudfront.net/home/sophie-m.webp",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const reviewsData = [
       "The results were better than I expected. Everything was clearly explained and the treatment felt completely personalised.",
     rating: 5,
     treatment: "Composite bonding patient",
-    image: "/images/reviews/daniel.webp",
+    image: "https://d12t91h5erunhq.cloudfront.net/home/daniel-r.webp",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const reviewsData = [
       "I finally feel confident smiling in photos. The practice is beautiful and everyone was incredibly welcoming.",
     rating: 5,
     treatment: "Teeth whitening patient",
-    image: "/images/reviews/amelia.webp",
+    image: "https://d12t91h5erunhq.cloudfront.net/home/amelia-j.webp",
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ export const reviewsData = [
       "Professional, friendly and extremely thorough. I felt reassured throughout the whole process.",
     rating: 5,
     treatment: "Veneers patient",
-    image: "/images/reviews/marcus.webp",
+    image: "https://d12t91h5erunhq.cloudfront.net/home/marcus-t.webp",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ export const reviewsData = [
       "The attention to detail was amazing. My smile still looks completely natural, just so much better.",
     rating: 5,
     treatment: "Smile makeover patient",
-    image: "/images/reviews/priya.webp",
+    image: "https://d12t91h5erunhq.cloudfront.net/home/priya-k.webp",
   },
   {
     id: 6,
@@ -51,6 +51,6 @@ export const reviewsData = [
       "I would recommend the practice without hesitation. The service and final result were both outstanding.",
     rating: 5,
     treatment: "Dental implants patient",
-    image: "/images/reviews/oliver.webp",
+    image: "https://d12t91h5erunhq.cloudfront.net/home/oliver-b.webp",
   },
 ];

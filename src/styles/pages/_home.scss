@@ -4,13 +4,26 @@
   .hero {
     width: 100%;
     height: 100vh;
-    border: 1px solid blue;
+    img {
+      display: none;
+    }
     background-image: url("https://d12t91h5erunhq.cloudfront.net/home/dental-home-hero.webp");
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
     @media only screen and (max-width: 1024px) {
-      background-position-y: 0;
+      background-image: url("https://d12t91h5erunhq.cloudfront.net/home/dental-home-ipad-hero.webp");
+      background-position: bottom;
+      background-size: cover;
+    }
+    @media only screen and (max-width: 560px) {
+      background-image: none;
+      height: unset;
+      img {
+        display: unset;
+        width: 100%;
+        aspect-ratio: 4/3;
+      }
     }
     .content {
       display: flex;
@@ -18,27 +31,55 @@
       width: 55%;
       justify-content: center;
       gap: 48px;
+
       .text {
         display: flex;
         flex-direction: column;
         align-items: start;
         gap: 16px;
+        @media only screen and (max-width: 1024px) {
+          a {
+            display: none;
+          }
+        }
+        @media only screen and (max-width: 560px) {
+          p br {
+            display: none;
+          }
+          a {
+            display: flex;
+          }
+        }
       }
       .trusts {
         display: flex;
         gap: 16px;
-        //     align-items: center;
         hr {
-          border: 2px solid #d9d9d9;
+          border: 1px solid #d9d9d9;
           border-radius: 2px;
           height: 48px;
           align-self: center;
+          @media only screen and (max-width: 560px) {
+            height: 1px;
+            width: 100%;
+          }
         }
         .trust {
           display: flex;
           flex-direction: column;
           align-items: center;
           text-align: center;
+          font-weight: 500;
+          @media only screen and (max-width: 560px) {
+            flex-direction: row;
+            width: 100%;
+            font-size: 14px;
+            gap: 8px;
+            padding: 0px;
+            br {
+              display: none;
+            }
+          }
 
           .icon {
             height: 40px;
@@ -52,6 +93,70 @@
               height: 20px;
               color: $brand-gold;
             }
+            @media only screen and (max-width: 800px) {
+              padding-top: 24px;
+              .star {
+                width: 16px;
+                height: 16px;
+              }
+            }
+            @media only screen and (max-width: 560px) {
+              padding-top: 0px;
+              padding-bottom: 0px;
+              display: flex;
+              align-items: center;
+              .star {
+                width: 20px;
+                height: 20px;
+              }
+            }
+          }
+        }
+        @media only screen and (max-width: 1024px) {
+          width: 100%;
+          justify-content: space-evenly;
+          font-size: 12px;
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 24px;
+          box-shadow: $shadow-lg;
+        }
+        @media only screen and (max-width: 800px) {
+          gap: 8px;
+          padding: 16px;
+        }
+        @media only screen and (max-width: 560px) {
+          flex-direction: column;
+          background-color: inherit;
+          box-shadow: none;
+        }
+      }
+      .trust-btn-holder {
+        a {
+          display: none;
+        }
+      }
+      @media only screen and (max-width: 1024px) {
+        width: 100%;
+        justify-content: space-between;
+        padding: 56px 0px;
+
+        .trust-btn-holder {
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+          align-items: start;
+          a {
+            display: flex;
+          }
+        }
+      }
+      @media only screen and (max-width: 560px) {
+        padding: 0px 0px;
+        gap: 24px;
+        .trust-btn-holder {
+          a {
+            display: none;
           }
         }
       }
@@ -142,11 +247,9 @@
         align-items: center;
         gap: 8px;
         width: 280px;
-        border: 1px solid red;
         img {
           width: 100px;
           height: 100px;
-          border: 1px solid blue;
         }
         h3 br {
           display: none;
@@ -219,7 +322,6 @@
     img {
       width: calc(50% - 28px);
       aspect-ratio: 16/9;
-      border: 1px solid red;
       border-radius: 8px;
       @media only screen and (max-width: 1180px) {
         width: 75%;
