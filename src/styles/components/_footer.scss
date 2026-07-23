@@ -1,0 +1,90 @@
+@use "../abstracts/variables" as *;
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: $off-white;
+  padding: 112px;
+  @media only screen and (max-width: 1440px) {
+    padding: 80px;
+  }
+  @media only screen and (max-width: 1024px) {
+    padding: 48px;
+  }
+  @media only screen and (max-width: 800px) {
+    padding: 32px;
+  }
+  @media only screen and (max-width: 560px) {
+    padding: 32px 16px;
+  }
+  .content {
+    display: flex;
+    border: 1px solid yellow;
+    .top {
+      display: flex;
+      border: 1px solid red;
+      padding-right: 12px;
+      gap: 24px;
+      width: 50%;
+      .sect1 {
+        width: calc(40% - 19.2px);
+        border: 1px solid green;
+      }
+      .sect2,
+      .sect3 {
+        border: 1px solid blue;
+        width: calc(30% - 14.4px);
+      }
+    }
+    .middle {
+      display: flex;
+      border: 1px solid red;
+      padding-left: 12px;
+      gap: 24px;
+      width: 50%;
+      .sect4 {
+        width: calc(60% - 14.4px);
+        border: 1px solid green;
+      }
+      .sect5 {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid blue;
+        width: calc(40% - 9.6px);
+        align-items: flex-start;
+      }
+    }
+    .sect2,
+    .sect3,
+    .sect4 {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      // padding: 16px;
+      .links-holder {
+        display: flex;
+        flex-direction: column;
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+    }
+    @media only screen and (max-width: 1024px) {
+      flex-direction: column;
+      gap: 20px;
+      .top,
+      .middle {
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+        @media only screen and (max-width: 560px) {
+          flex-direction: column;
+          .footer-sect {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

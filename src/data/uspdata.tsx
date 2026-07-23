@@ -7,7 +7,7 @@ export const uspdata = [
         <br /> Care
       </>
     ),
-    graphic: "https://d12t91h5erunhq.cloudfront.net/home/expert.webp",
+    graphic: "https://d12t91h5erunhq.cloudfront.net/home/expert1.webp",
     alt: "caring",
     description:
       "Highly qualified dentists with years of experience in cosmetic dentistry.",
@@ -21,7 +21,7 @@ export const uspdata = [
       </>
     ),
     alt: "caring",
-    graphic: "https://d12t91h5erunhq.cloudfront.net/home/advanced.webp",
+    graphic: "https://d12t91h5erunhq.cloudfront.net/home/advanced1.webp",
     description:
       "State-of-the-art equipment for precise, comfottable treatment.",
   },
@@ -34,7 +34,7 @@ export const uspdata = [
       </>
     ),
     alt: "caring",
-    graphic: "https://d12t91h5erunhq.cloudfront.net/home/personalised.webp",
+    graphic: "https://d12t91h5erunhq.cloudfront.net/home/personalised1.webp",
     description: "Every smile is unique. We create a plan tailored to you.",
   },
   {
@@ -46,7 +46,7 @@ export const uspdata = [
       </>
     ),
     alt: "caring",
-    graphic: "https://d12t91h5erunhq.cloudfront.net/home/comfort.webp",
+    graphic: "https://d12t91h5erunhq.cloudfront.net/home/comfort1.webp",
     description:
       "Relax in our modern clinic, designed with your comfort in mind.",
   },
